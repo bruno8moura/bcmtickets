@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse, { ErrorType } from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse, ErrorType } from "./ICommonErrorResponse";
 
-class WrongCredentialsProvidedError extends AppError {
+export class WrongCredentialsProvidedError extends AppError {
     statusCode = 400;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -22,5 +22,3 @@ class WrongCredentialsProvidedError extends AppError {
         }
     }
 }
-
-export default WrongCredentialsProvidedError;

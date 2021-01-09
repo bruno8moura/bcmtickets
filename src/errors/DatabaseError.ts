@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse, { ErrorType } from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse, ErrorType } from "./ICommonErrorResponse";
 
-class DatabaseError extends AppError {
+export class DatabaseError extends AppError {
     statusCode = 500;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -22,5 +22,3 @@ class DatabaseError extends AppError {
         }
     }
 }
-
-export default DatabaseError;

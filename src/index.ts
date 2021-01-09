@@ -1,4 +1,8 @@
-export * from './errors/AppError';
+CONCERTAR ISSO AQUI...
+
+COMO EXPORTAR MÓDULOS DE UMA SHARED LIBRARY?
+
+export AppError from './errors/AppError';
 export * from './errors/DatabaseError';
 export * from './errors/ICommonErrorResponse';
 export * from './errors/InvalidJsonError';

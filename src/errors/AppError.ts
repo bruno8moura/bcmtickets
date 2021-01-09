@@ -1,6 +1,6 @@
-import ICommonErrorResponse from "./ICommonErrorResponse";
+import { ICommonErrorResponse } from "./ICommonErrorResponse";
 
-abstract class AppError extends Error {
+export abstract class AppError extends Error {
     abstract statusCode: number;
 
     constructor(message: string){
@@ -13,4 +13,3 @@ abstract class AppError extends Error {
     abstract serializedError(): ICommonErrorResponse;
 }
 
-export default AppError;

@@ -1,7 +1,7 @@
-import AppError from './AppError';
-import ICommonErrorResponse, { ErrorType } from './ICommonErrorResponse';
+import { AppError } from './AppError';
+import { ICommonErrorResponse, ErrorType } from './ICommonErrorResponse';
 
-class JwtSecretNotDefinedError extends AppError{
+export class JwtSecretNotDefinedError extends AppError{
     statusCode = 500;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -23,5 +23,3 @@ class JwtSecretNotDefinedError extends AppError{
         }
     }
 }
-
-export default JwtSecretNotDefinedError;

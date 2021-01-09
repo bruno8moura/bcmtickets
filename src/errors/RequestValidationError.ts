@@ -1,8 +1,8 @@
 import { Result, ValidationError } from 'express-validator'
-import AppError from './AppError';
-import ICommonErrorResponse, { ErrorType } from './ICommonErrorResponse';
+import { AppError } from './AppError';
+import { ICommonErrorResponse, ErrorType } from './ICommonErrorResponse';
 
-class RequestValidationError extends AppError{
+export class RequestValidationError extends AppError{
     statusCode = 400;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -24,5 +24,3 @@ class RequestValidationError extends AppError{
         }
     }
 }
-
-export default RequestValidationError;

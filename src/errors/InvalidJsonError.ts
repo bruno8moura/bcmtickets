@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse, { ErrorType } from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse, ErrorType } from "./ICommonErrorResponse";
 
-class InvalidJsonError extends AppError {
+export class InvalidJsonError extends AppError {
     statusCode = 400;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -23,5 +23,3 @@ class InvalidJsonError extends AppError {
     }
     
 }
-
-export default InvalidJsonError;

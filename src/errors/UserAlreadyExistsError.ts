@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse, { ErrorType } from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse, ErrorType } from "./ICommonErrorResponse";
 
-class UserAlreadyExistsError extends AppError {
+export class UserAlreadyExistsError extends AppError {
     statusCode = 400;
     private readonly messages: string[];
     private readonly status: ErrorType;
@@ -22,5 +22,3 @@ class UserAlreadyExistsError extends AppError {
         }
     }
 }
-
-export default UserAlreadyExistsError;

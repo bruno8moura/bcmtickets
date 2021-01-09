@@ -1,6 +1,6 @@
 export type ErrorType = 'client.error' | 'server.error';
 
-export default interface ICommonErrorResponse {
+export interface ICommonErrorResponse {
     statusError: ErrorType;
     messages: string[];    
 }

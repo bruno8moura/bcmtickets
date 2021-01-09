@@ -1,9 +1,9 @@
 import { Response, Request, NextFunction } from "express";
-import AppError from "../../errors/AppError";
+import { AppError } from "../../errors/AppError";
 import { v4 } from "uuid";
-import InvalidJsonError from "../../errors/InvalidJsonError";
+import { InvalidJsonError } from "../../errors/InvalidJsonError";
 
-const errorHandler = (
+export const errorHandler = (
     err: Error, 
     req: Request, 
     res: Response, 
@@ -27,5 +27,3 @@ const errorHandler = (
 
         return res.status(500).json({status: 'server.error', messages: ['Please contact system administrator.']});
 };
-
-export default errorHandler;

@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse } from "./ICommonErrorResponse";
 
-class NotAuthorizedError extends AppError {
+export class NotAuthorizedError extends AppError {
     statusCode = 401;
     
     constructor(){
@@ -17,5 +17,3 @@ class NotAuthorizedError extends AppError {
         }
     }    
 }
-
-export default NotAuthorizedError;

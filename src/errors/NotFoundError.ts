@@ -1,7 +1,7 @@
-import AppError from "./AppError";
-import ICommonErrorResponse from "./ICommonErrorResponse";
+import { AppError } from "./AppError";
+import { ICommonErrorResponse } from "./ICommonErrorResponse";
 
-class NotFoundError extends AppError {
+export class NotFoundError extends AppError {
     statusCode = 404;
     
     constructor(){
@@ -18,5 +18,3 @@ class NotFoundError extends AppError {
     }
     
 }
-
-export default NotFoundError;
