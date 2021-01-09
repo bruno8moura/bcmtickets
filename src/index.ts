@@ -13,3 +13,5 @@ export * from './middlerwares/auth';
 export * from './middlerwares/currentuser';
 export * from './middlerwares/errors';
 export * from './middlerwares/requestValidation';
+
+export * from './types/request';
