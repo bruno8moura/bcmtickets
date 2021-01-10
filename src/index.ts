@@ -1,3 +1,12 @@
+import { UserPayload } from './types/request';
+declare global {
+    namespace Express{
+        interface Request {
+            currentUser?: UserPayload;
+        }
+    }
+}
+
 export * from './errors/AppError';
 export * from './errors/DatabaseError';
 export * from './errors/ICommonErrorResponse';
