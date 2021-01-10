@@ -1,3 +1,4 @@
+// Re-export stuff from errors and middlewares
 export * from './errors/AppError';
 export * from './errors/DatabaseError';
 export * from './errors/ICommonErrorResponse';
