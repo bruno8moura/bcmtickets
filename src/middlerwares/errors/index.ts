@@ -9,7 +9,7 @@ export const errorHandler = (
     res: Response, 
     next: NextFunction) => {
         //to implement request id
-        const reqid = v4();
+        //const reqid = v4();
 
         //to implement logs here
         //console.log(`${reqid}:::`, err);
@@ -23,7 +23,7 @@ export const errorHandler = (
         }
 
         //to implement logs here
-        //console.error(`${reqid}:::${err.stack}`);
+        console.error(`${err.stack}`);
 
         return res.status(500).json({status: 'server.error', messages: ['Please contact system administrator.']});
 };
