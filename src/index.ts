@@ -16,3 +16,10 @@ export * from './middlerwares/errors';
 export * from './middlerwares/requestValidation';
 
 export * from './types/request';
+export * from './events/Listener';
+export * from './events/Publisher';
+export * from './events/Subjects';
+export * from './events/TemplateEvent';
+export * from './events/TicketCreatedEvent';
+export * from './events/TicketUpdatedEvent';
+export * from './events/dtos/TicketDTO';
