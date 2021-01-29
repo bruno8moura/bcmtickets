@@ -1,4 +1,4 @@
-import { Message, Stan } from "node-nats-streaming";
+import { Message, Stan } from 'node-nats-streaming';
 import {Event} from '../TemplateEvent';
 
 export abstract class Listener<T extends Event> {
