@@ -1,6 +1,5 @@
 import { Response, Request, NextFunction } from "express";
 import { AppError } from "../../errors/AppError";
-import { v4 } from "uuid";
 import { InvalidJsonError } from "../../errors/InvalidJsonError";
 
 export const errorHandler = (

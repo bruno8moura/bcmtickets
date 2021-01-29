@@ -1,7 +1,6 @@
 // Re-export stuff from errors and middlewares
 export * from './errors/AppError';
 export * from './errors/DatabaseError';
-export * from './errors/StreamingServerError';
 export * from './errors/ICommonErrorResponse';
 export * from './errors/InvalidJsonError';
 export * from './errors/JwtSecretNotDefinedError';
@@ -10,6 +9,7 @@ export * from './errors/NotFoundError';
 export * from './errors/RequestValidationError';
 export * from './errors/UserAlreadyExistsError';
 export * from './errors/WrongCredentialsProvidedError';
+export * from './errors/StreamingServerError';
 
 export * from './middlerwares/auth';
 export * from './middlerwares/currentuser';
