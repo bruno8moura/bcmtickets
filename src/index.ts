@@ -1,6 +1,7 @@
 // Re-export stuff from errors and middlewares
 export * from './errors/AppError';
 export * from './errors/DatabaseError';
+export * from './errors/StreamingServerError';
 export * from './errors/ICommonErrorResponse';
 export * from './errors/InvalidJsonError';
 export * from './errors/JwtSecretNotDefinedError';
