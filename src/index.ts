@@ -10,6 +10,7 @@ export * from './errors/RequestValidationError';
 export * from './errors/UserAlreadyExistsError';
 export * from './errors/WrongCredentialsProvidedError';
 export * from './errors/StreamingServerError';
+export * from './errors/BadRequestError';
 
 export * from './middlerwares/auth';
 export * from './middlerwares/currentuser';
