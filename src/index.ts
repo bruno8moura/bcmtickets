@@ -24,3 +24,4 @@ export * from './events/TemplateEvent';
 export * from './events/TicketCreatedEvent';
 export * from './events/TicketUpdatedEvent';
 export * from './events/dtos/TicketDTO';
+export * from './events/types'
