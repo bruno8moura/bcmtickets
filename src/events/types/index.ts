@@ -13,5 +13,16 @@ export enum OrderStatus {
     AwaitingPayment = 'awaiting:payment',
 
     // The order has reserved the ticket and the user has provided payment successfully
-    Complete = 'complete'
+    Complete = 'complete',
+
+
+}
+
+export function getOrderStatus(status: string): OrderStatus | undefined {
+    if(status === OrderStatus.Created) return OrderStatus.Created;
+    if(status === OrderStatus.AwaitingPayment) return OrderStatus.AwaitingPayment;
+    if(status === OrderStatus.Cancelled) return OrderStatus.Cancelled;
+    if(status === OrderStatus.Complete) return OrderStatus.Complete;
+
+    return undefined;
 }
