@@ -22,7 +22,13 @@ export * from './events/Listener';
 export * from './events/Publisher';
 export * from './events/Subjects';
 export * from './events/TemplateEvent';
+export * from './events/types'
+
+export * from './events/dtos/TicketDTO';
+export * from './events/dtos/OrderDTO';
+
 export * from './events/TicketCreatedEvent';
 export * from './events/TicketUpdatedEvent';
-export * from './events/dtos/TicketDTO';
-export * from './events/types'
+
+export * from './events/OrderCreatedEvent';
+export * from './events/OrderCancelledEvent';
