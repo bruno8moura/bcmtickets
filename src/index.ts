@@ -11,6 +11,7 @@ export * from './errors/UserAlreadyExistsError';
 export * from './errors/WrongCredentialsProvidedError';
 export * from './errors/StreamingServerError';
 export * from './errors/BadRequestError';
+export * from './errors/ExpirationTimeNotDefinedError';
 
 export * from './middlerwares/auth';
 export * from './middlerwares/currentuser';
