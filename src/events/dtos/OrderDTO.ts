@@ -6,5 +6,6 @@ export interface OrderDTO {
     status: OrderStatus;
     userId: string;
     expiresAt: string;
+    version: number;
     ticket: TicketDTO;
 }
