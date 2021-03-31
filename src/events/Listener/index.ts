@@ -5,7 +5,7 @@ export abstract class Listener<T extends Event> {
     abstract subject: T['subject'];
     abstract queueGroupName: string;
     abstract onMessage(data: T['data'], msg: Message): void;
-    private client: Stan;
+    protected client: Stan;
     protected ackWaitSeconds = 5;
 
     constructor(client: Stan){

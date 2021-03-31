@@ -4,7 +4,7 @@ import { Event } from '../TemplateEvent';
 export abstract class Publisher<T extends Event>{
     abstract subject: T['subject'];
 
-    client: Stan;
+    protected client: Stan;
     constructor(client: Stan){
         this.client = client;
     }
