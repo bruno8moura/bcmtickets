@@ -4,7 +4,7 @@ export const configDateToLocalTimezone = (date: Date): Date => {
     return date;    
 };
 
-export const getTimeWithLocalTimezone = (now: Date, expirationWindowSeconds=0) => {    
+export const setLocalTimezone = (now: Date, expirationWindowSeconds=0) => {    
     configDateToLocalTimezone(now);
     now.setSeconds(now.getSeconds() + expirationWindowSeconds);
         
