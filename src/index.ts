@@ -34,6 +34,8 @@ export * from './events/TicketUpdatedEvent';
 export * from './events/OrderCreatedEvent';
 export * from './events/OrderCancelledEvent';
 
+export * from './events/PaymentCreatedEvent';
+
 export * from './events/ExpirationCompleteEvent';
 
 export * from './util/rightousTimezone';
